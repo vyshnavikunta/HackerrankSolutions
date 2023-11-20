@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i,j,N,ar[100];
+    scanf("%d",&N);
+    for(i=0;i<N;i++)
+        scanf("%d",&ar[i]);
+    for(i=0;i<N;i++)
+    {   for(j=0;j<N;j++)
+    {       if((ar[i]==ar[j])&& (i!=j))
+                break;}
+             if(j==N)
+                printf("%d ",ar[i]);}
+      
+    return 0;
+}
